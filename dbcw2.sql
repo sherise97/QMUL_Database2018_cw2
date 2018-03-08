@@ -41,7 +41,7 @@ CREATE TABLE STUD
     (345678912, 'Lazy Pig', 'l.p@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
     (456789123, 'Sleepy Wakey', 's.w@se16.qmul.ac.uk');
-    
+
 
 -- table for subjects --
 CREATE TABLE SUBJ
@@ -53,82 +53,82 @@ CREATE TABLE SUBJ
 );
 
   INSERT INTO SUBJ VALUES
-    ('ECS529U', 'Database Systems', TO_DATE('2018','YYYY'), 5);
+    ('ECS529U', 'Database Systems', TO_DATE('01-2018','MON-YYYY'), 5);
   INSERT INTO SUBJ VALUES
-    ('ECS522U', 'Graphical User Interfaces', TO_DATE('2018','YYYY'), 5);
+    ('ECS522U', 'Graphical User Interfaces', TO_DATE('01-2018','MON-YYYY'), 5);
   INSERT INTO SUBJ VALUES
-    ('ECS506U', 'Software Engineering Project', TO_DATE('2018','YYYY'), 5);
+    ('ECS506U', 'Software Engineering Project', TO_DATE('01-2018','MON-YYYY'), 5);
   INSERT INTO SUBJ VALUES
-    ('ECS518U', 'Operating Systems', TO_DATE('2018','YYYY'), 5);
+    ('ECS518U', 'Operating Systems', TO_DATE('01-2018','MON-YYYY'), 5);
   INSERT INTO SUBJ VALUES
-    ('ECS509U', 'Probability and Matrices', TO_DATE('2017','YYYY'), 4);
+    ('ECS509U', 'Probability and Matrices', TO_DATE('10-2017','MON-YYYY'), 4);
   INSERT INTO SUBJ VALUES
-    ('ECS524U', 'Internet Protocals and Application', TO_DATE('2017','YYYY'), 4);
+    ('ECS524U', 'Internet Protocals and Application', TO_DATE('10-2017','MON-YYYY'), 4);
   INSERT INTO SUBJ VALUES
-    ('ECS510U', 'Algorithms and Data Structures IN AN OBJECT-ORIENTED FRAMEWORK', TO_DATE('2017','YYYY'), 4);
+    ('ECS510U', 'Algorithms and Data Structures IN AN OBJECT-ORIENTED FRAMEWORK', TO_DATE('10-2017','MON-YYYY'), 4);
   INSERT INTO SUBJ VALUES
-    ('ECS505U', 'Software Engineering', TO_DATE('2017','YYYY'), 4);
+    ('ECS505U', 'Software Engineering', TO_DATE('10-2017','MON-YYYY'), 4);
 
   INSERT INTO SUBJ VALUES
-    ('ECS421U', 'Automata and Formal Languages', TO_DATE('2017','YYYY'), 2);
+    ('ECS421U', 'Automata and Formal Languages', TO_DATE('01-2017','MON-YYYY'), 2);
   INSERT INTO SUBJ VALUES
-    ('ECS419U', 'Information System Analysis', TO_DATE('2017','YYYY'), 2);
+    ('ECS419U', 'Information System Analysis', TO_DATE('01-2017','MON-YYYY'), 2);
   INSERT INTO SUBJ VALUES
-    ('ECS417U', 'Fundamentals of Web Technology', TO_DATE('2017','YYYY'), 2);
+    ('ECS417U', 'Fundamentals of Web Technology', TO_DATE('01-2017','MON-YYYY'), 2);
   INSERT INTO SUBJ VALUES
-    ('ECS414U', 'Onject-Oriented Programming', TO_DATE('2017','YYYY'), 2);
+    ('ECS414U', 'Onject-Oriented Programming', TO_DATE('01-2017','MON-YYYY'), 2);
   INSERT INTO SUBJ VALUES
-    ('ECS407U', 'Logic and Discrete Structures', TO_DATE('2016','YYYY'), 1);
+    ('ECS407U', 'Logic and Discrete Structures', TO_DATE('10-2016','MON-YYYY'), 1);
   INSERT INTO SUBJ VALUES
-    ('ECS404U', 'Computer Systems and Network', TO_DATE('2016','YYYY'), 1);
+    ('ECS404U', 'Computer Systems and Network', TO_DATE('10-2016','MON-YYYY'), 1);
   INSERT INTO SUBJ VALUES
-    ('ECS402U', 'Professional and Research Themes', TO_DATE('2016','YYYY'), 1);
+    ('ECS402U', 'Professional and Research Themes', TO_DATE('10-2016','MON-YYYY'), 1);
   INSERT INTO SUBJ VALUES
-    ('ECS401U', 'Procedural Programming', TO_DATE('2016','YYYY'), 1);
+    ('ECS401U', 'Procedural Programming', TO_DATE('10-2016','MON-YYYY'), 1);
 
 
 -- table for student subject --
--- maybe ADD LECTSUBJ! as at least one lecturer taught one subject.
-CREATE TABLE STUDSUBJ
+-- maybe ADD LECTSUBJ! as at least one lecturer taught one subject. --
+CREATE TABLE STUDSUBJ -- not working at the moment... --
 (
   StudentID NUMBER(9),
-  SubjectCode VARCHAR2(8)
+  SubjectCode VARCHAR2(8),
   LecturerID NUMBER(9)
 );
 
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS529U');
+    (161017024, 'ECS529U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS522U');
+    (161017024, 'ECS522U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS506U');
+    (161017024, 'ECS506U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS518U');
+    (161017024, 'ECS518U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS509U');
+    (161017024, 'ECS509U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS524U');
+    (161017024, 'ECS524U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS510U');
+    (161017024, 'ECS510U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS505U');
+    (161017024, 'ECS505U', 520131400);
 
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS421U');
+    (161017024, 'ECS421U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS419U');
+    (161017024, 'ECS419U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS417U');
+    (161017024, 'ECS417U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS414U');
+    (161017024, 'ECS414U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS407U');
+    (161017024, 'ECS407U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS404U');
+    (161017024, 'ECS404U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS402U');
+    (161017024, 'ECS402U', 520131400);
   INSERT INTO STUDSUBJ VALUES
-    (161017024, 'ECS401U');
+    (161017024, 'ECS401U', 520131400);
 
 
 -- table for lecturers --
@@ -146,26 +146,26 @@ CREATE TABLE LECT
 
 
 -- table for Courseworks --
-CREATE TABLE CW
+CREATE TABLE CW -- not working atm... --
 (
   CWCode NUMBER(10),
   CWName VARCHAR2(30),
   CWDeadline DATE,
   CWMark NUMBER(3),
-  SubjectCode VARCHAR2(8)
+  SubjectCode VARCHAR2(8),
   StudentID NUMBER(9) -- add student ID because Courseworks done by student\.
 );
 
   INSERT INTO CW VALUES
     (0136794, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MON-YY HH:MI'
-      83, 'ECS529U');
+      83, 'ECS529U', 161017024);
   INSERT INTO CW VALUES
     (0136790, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MON-YY HH:MI'
-      90, 'ECS529U');
+      90, 'ECS529U', 161017024);
 
 
 -- table for exams --
-CREATE TABLE EXAM
+CREATE TABLE EXAM -- not working atm.. --
 (
   ExamCode NUMBER(5),
   EName VARCHAR2(15),
@@ -174,7 +174,7 @@ CREATE TABLE EXAM
   ETime TIME,
   EMark NUMBER(3),
   SubjectCode VARCHAR2(8),
-  LecturerID NUMBER(9)
+  LecturerID NUMBER(9),
   StudentID NUMBER(9) -- added studentID because student takes exams.
 );
 
