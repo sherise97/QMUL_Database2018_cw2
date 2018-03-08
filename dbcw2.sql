@@ -47,7 +47,7 @@ CREATE TABLE STUD
 CREATE TABLE SUBJ
 (
   SubjectCode VARCHAR2(8),
-  SubjName VARCHAR2(50),
+  SubjName VARCHAR2(70),
   SubjYear DATE,
   SubjSem NUMBER(1)
 );
@@ -68,7 +68,6 @@ CREATE TABLE SUBJ
     ('ECS510U', 'Algorithms and Data Structures IN AN OBJECT-ORIENTED FRAMEWORK', TO_DATE('10-2017','MM-YYYY'), 4);
   INSERT INTO SUBJ VALUES
     ('ECS505U', 'Software Engineering', TO_DATE('10-2017','MM-YYYY'), 4);
-
   INSERT INTO SUBJ VALUES
     ('ECS421U', 'Automata and Formal Languages', TO_DATE('01-2017','MM-YYYY'), 2);
   INSERT INTO SUBJ VALUES
@@ -112,7 +111,6 @@ CREATE TABLE STUDSUBJ
     (161017024, 'ECS510U', 520131400);
   INSERT INTO STUDSUBJ VALUES
     (161017024, 'ECS505U', 520131400);
-
   INSERT INTO STUDSUBJ VALUES
     (161017024, 'ECS421U', 520131400);
   INSERT INTO STUDSUBJ VALUES
@@ -146,7 +144,7 @@ CREATE TABLE LECT
 
 
 -- table for Courseworks --
--- add student ID because Courseworks done by student.
+-- add student ID because Courseworks done by student. --
 CREATE TABLE CW
 (
   CWCode NUMBER(10),
@@ -166,7 +164,7 @@ CREATE TABLE CW
 
 
 -- table for exams --
--- added studentID because student takes exams.
+-- added studentID because student takes exams. --
 CREATE TABLE EXAM
 (
   ExamCode NUMBER(5),
@@ -195,7 +193,7 @@ CREATE TABLE EXAM
 
 
 -- table for questions --
--- max marks of each question is 5
+-- max marks of each question is 5 --
 CREATE TABLE QUEST
 (
   QuestionNo NUMBER(2),
