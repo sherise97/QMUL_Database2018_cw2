@@ -157,10 +157,10 @@ CREATE TABLE CW -- not working atm... --
 );
 
   INSERT INTO CW VALUES
-    (0136794, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MON-YY HH:MI'
+    (0136794, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MON-YY HH:MI'),
       83, 'ECS529U', 161017024);
   INSERT INTO CW VALUES
-    (0136790, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MON-YY HH:MI'
+    (0136790, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MON-YY HH:MI'),
       90, 'ECS529U', 161017024);
 
 
