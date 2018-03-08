@@ -89,7 +89,7 @@ CREATE TABLE SUBJ
 
 -- table for student subject --
 -- maybe ADD LECTSUBJ! as at least one lecturer taught one subject. --
-CREATE TABLE STUDSUBJ -- not working at the moment... --
+CREATE TABLE STUDSUBJ
 (
   StudentID NUMBER(9),
   SubjectCode VARCHAR2(8),
@@ -146,57 +146,60 @@ CREATE TABLE LECT
 
 
 -- table for Courseworks --
-CREATE TABLE CW -- not working atm... --
+-- add student ID because Courseworks done by student.
+CREATE TABLE CW
 (
   CWCode NUMBER(10),
   CWName VARCHAR2(30),
   CWDeadline DATE,
   CWMark NUMBER(3),
   SubjectCode VARCHAR2(8),
-  StudentID NUMBER(9) -- add student ID because Courseworks done by student\.
+  StudentID NUMBER(9)
 );
 
   INSERT INTO CW VALUES
-    (0136794, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YY HH:MI'),
+    (0136794, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       83, 'ECS529U', 161017024);
   INSERT INTO CW VALUES
-    (0136790, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YY HH:MI'),
+    (0136790, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       90, 'ECS529U', 161017024);
 
 
 -- table for exams --
-CREATE TABLE EXAM -- not working atm.. --
+-- added studentID because student takes exams.
+CREATE TABLE EXAM
 (
   ExamCode NUMBER(5),
   EName VARCHAR2(15),
   EType VARCHAR2(10),
   EDate DATE,
-  ETime TIME,
+  ETime TIMESTAMP,
   EMark NUMBER(3),
   SubjectCode VARCHAR2(8),
   LecturerID NUMBER(9),
-  StudentID NUMBER(9) -- added studentID because student takes exams.
+  StudentID NUMBER(9)
 );
 
   INSERT INTO EXAM VALUES
     (0159, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH:MI'), 79, 'ECS529U', 520131400, 161017024);
+      TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS529U', 520131400, 161017024);
   INSERT INTO EXAM VALUES
     (2107, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('11:00','HH:MI'), 89, 'ECS505U', 123456789, 161017024);
+      TO_TIMESTAMP('11:00','HH24:MI'), 89, 'ECS505U', 123456789, 161017024);
   INSERT INTO EXAM VALUES
     (3459, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('09:00','HH:MI'), 73, 'ECS522U', 520131400, 161017024);
+      TO_TIMESTAMP('09:00','HH24:MI'), 73, 'ECS522U', 520131400, 161017024);
   INSERT INTO EXAM VALUES
     (1122, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:00','HH:MI'), 92, 'ECS509U', 123456789, 161017024);
+      TO_TIMESTAMP('14:00','HH24:MI'), 92, 'ECS509U', 123456789, 161017024);
 
 
 -- table for questions --
+-- max marks of each question is 5
 CREATE TABLE QUEST
 (
   QuestionNo NUMBER(2),
-  QMark NUMBER(2), -- max marks of each question is 5
+  QMark NUMBER(2),
   QAuthor VARCHAR2(30),
   ExamCode NUMBER(5),
   LecturerID NUMBER(9)
