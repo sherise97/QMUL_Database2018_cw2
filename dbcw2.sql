@@ -24,13 +24,13 @@ CREATE TABLE STUD
   INSERT INTO STUD VALUES
     (161017024, 'Sherise Lam', 's.y.lam@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (000000001, 'Ethan Sung', 'j.y.s@se16.qmul.ac.uk');
+    (160000001, 'Ethan Sung', 'j.y.s@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (000000002, 'Sam Law', 'w.s.l@se16.qmul.ac.uk');
+    (160000002, 'Sam Law', 'w.s.l@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (000000003, 'Simon Carucci', 's.c@se16.qmul.ac.uk');
+    (160000003, 'Simon Carucci', 's.c@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (000000004, 'Agata Miakisz', 'a.m@se16.qmul.ac.uk');
+    (160000004, 'Agata Miakisz', 'a.m@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
     (110519970, 'Sheri Rice', 's.r@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
@@ -47,7 +47,7 @@ CREATE TABLE STUD
 CREATE TABLE SUBJ
 (
   SubjectCode VARCHAR2(8),
-  SubjName VARCHAR2(70),
+  SubjName VARCHAR2(65),
   SubjYear DATE,
   SubjSem NUMBER(1)
 );
@@ -63,27 +63,27 @@ CREATE TABLE SUBJ
   INSERT INTO SUBJ VALUES
     ('ECS509U', 'Probability and Matrices', TO_DATE('10-2017','MM-YYYY'), 4);
   INSERT INTO SUBJ VALUES
-    ('ECS524U', 'Internet Protocals and Application', TO_DATE('10-2017','MM-YYYY'), 4);
+    ('ECS524U', 'Internet Protocols and Application', TO_DATE('10-2017','MM-YYYY'), 4);
   INSERT INTO SUBJ VALUES
-    ('ECS510U', 'Algorithms and Data Structures IN AN OBJECT-ORIENTED FRAMEWORK', TO_DATE('10-2017','MM-YYYY'), 4);
+    ('ECS510U', 'Algorithms and Data Structures in an Object-Oriented Framework', TO_DATE('10-2017','MM-YYYY'), 4);
   INSERT INTO SUBJ VALUES
     ('ECS505U', 'Software Engineering', TO_DATE('10-2017','MM-YYYY'), 4);
-  INSERT INTO SUBJ VALUES
-    ('ECS421U', 'Automata and Formal Languages', TO_DATE('01-2017','MM-YYYY'), 2);
-  INSERT INTO SUBJ VALUES
-    ('ECS419U', 'Information System Analysis', TO_DATE('01-2017','MM-YYYY'), 2);
-  INSERT INTO SUBJ VALUES
-    ('ECS417U', 'Fundamentals of Web Technology', TO_DATE('01-2017','MM-YYYY'), 2);
-  INSERT INTO SUBJ VALUES
-    ('ECS414U', 'Onject-Oriented Programming', TO_DATE('01-2017','MM-YYYY'), 2);
-  INSERT INTO SUBJ VALUES
-    ('ECS407U', 'Logic and Discrete Structures', TO_DATE('10-2016','MM-YYYY'), 1);
-  INSERT INTO SUBJ VALUES
-    ('ECS404U', 'Computer Systems and Network', TO_DATE('10-2016','MM-YYYY'), 1);
-  INSERT INTO SUBJ VALUES
-    ('ECS402U', 'Professional and Research Themes', TO_DATE('10-2016','MM-YYYY'), 1);
-  INSERT INTO SUBJ VALUES
-    ('ECS401U', 'Procedural Programming', TO_DATE('10-2016','MM-YYYY'), 1);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS421U', 'Automata and Formal Languages', TO_DATE('01-2017','MM-YYYY'), 2);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS419U', 'Information System Analysis', TO_DATE('01-2017','MM-YYYY'), 2);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS417U', 'Fundamentals of Web Technology', TO_DATE('01-2017','MM-YYYY'), 2);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS414U', 'Object-Oriented Programming', TO_DATE('01-2017','MM-YYYY'), 2);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS407U', 'Logic and Discrete Structures', TO_DATE('10-2016','MM-YYYY'), 1);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS404U', 'Computer Systems and Network', TO_DATE('10-2016','MM-YYYY'), 1);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS402U', 'Professional and Research Themes', TO_DATE('10-2016','MM-YYYY'), 1);
+  --INSERT INTO SUBJ VALUES
+  --  ('ECS401U', 'Procedural Programming', TO_DATE('10-2016','MM-YYYY'), 1);
 
 
 -- table for student subject --
