@@ -177,7 +177,7 @@ CREATE TABLE CW
 
 
 -- table for exams --
--- added studentID because student takes exams. --
+-- maybe add studentID because student takes exams. StudentID NUMBER(9) --
 CREATE TABLE EXAM
 (
   ExamCode NUMBER(5),
@@ -188,34 +188,29 @@ CREATE TABLE EXAM
   EMark NUMBER(3),
   SubjectCode VARCHAR2(8),
   LecturerID NUMBER(9),
-  StudentID NUMBER(9)
 );
 
   INSERT INTO EXAM VALUES
-    (0159, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS529U', 520131400, 161017024);
+    (0159, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', 100000011);
   INSERT INTO EXAM VALUES
-    (2107, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('11:00','HH24:MI'), 89, 'ECS505U', 123456789, 161017024);
+    (2107, 'Final Exam', 'First Sit', TO_DATE('04-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', 100000041);
   INSERT INTO EXAM VALUES
-    (3459, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('09:00','HH24:MI'), 73, 'ECS522U', 520131400, 161017024);
+    (3459, 'Final Exam', 'First Sit', TO_DATE('02-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 73, 'ECS522U', 100000005);
   INSERT INTO EXAM VALUES
-    (1122, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:00','HH24:MI'), 92, 'ECS509U', 123456789, 161017024);
+    (1122, 'Final Exam', 'First Sit', TO_DATE('22-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', 100000001);
   INSERT INTO EXAM VALUES
-    (1312, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS529U', 520131400, 161017024);
+    (1312, 'Final Exam', 'First Sit', TO_DATE('16-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('10:00','HH24:MI'), 80, 'ECS518U', 520131400);
   INSERT INTO EXAM VALUES
-    (2198, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('11:00','HH24:MI'), 89, 'ECS505U', 123456789, 161017024);
+    (2198, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('10:00','HH24:MI'), 89, 'ECS510U', 123456789);
   INSERT INTO EXAM VALUES
-    (0710, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('09:00','HH24:MI'), 73, 'ECS522U', 520131400, 161017024);
-  INSERT INTO EXAM VALUES
-    (3164, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:00','HH24:MI'), 92, 'ECS509U', 123456789, 161017024);
-
+    (0710, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('10:00','HH24:MI'), 70, 'ECS524U', 520131400);
 
 -- table for questions --
 -- max marks of each question is 5 --
