@@ -210,7 +210,7 @@ CREATE TABLE EXAM
       TO_TIMESTAMP('10:00','HH24:MI'), 89, 'ECS510U', 123456789);
   INSERT INTO EXAM VALUES
     (0710, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 70, 'ECS524U', 520131400);
+      TO_TIMESTAMP('10:00','HH24:MI'), 70, 'ECS524U', 100000003);
 
 -- table for questions --
 -- max marks of each question is 5 --
