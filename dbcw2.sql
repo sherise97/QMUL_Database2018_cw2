@@ -26,7 +26,7 @@ CREATE TABLE STUD
   INSERT INTO STUD VALUES
     (160000001, 'Ethan Sung', 'j.y.s@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (160000002, 'Sam Law', 'w.s.l@se16.qmul.ac.uk');
+    (160448269, 'Sam Law', 'w.s.l@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
     (160000003, 'Simon Carucci', 's.c@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
