@@ -271,35 +271,35 @@ CREATE TABLE QUEST
 );
 
   INSERT INTO QUEST VALUES
-    (01, 2, 'Tassos Tombros', seq_ExamCode.nextval, 17);
+    (01, 2, 'Tassos Tombros', 82, 17);
   INSERT INTO QUEST VALUES
-    (02, 3, 'Tassos Tombros', seq_ExamCode.nextval, 17);
+    (02, 3, 'Tassos Tombros', 83, 17);
   INSERT INTO QUEST VALUES
-    (03, 4, 'Mustafa Bozkurt', seq_ExamCode.nextval, 21);
+    (03, 4, 'Mustafa Bozkurt', 84, 21);
   INSERT INTO QUEST VALUES
-    (04, 2, 'Tassos Tombros', seq_ExamCode.nextval, 17);
+    (04, 2, 'Tassos Tombros', 85, 17);
   INSERT INTO QUEST VALUES
-    (05, 8, 'Tassos Tombros', seq_ExamCode.nextval, 17);
+    (05, 8, 'Tassos Tombros', 86, 17);
   INSERT INTO QUEST VALUES
-    (13, 5, 'Anthony Stockman', seq_ExamCode.nextval, 15);
+    (13, 5, 'Anthony Stockman', 87, 15);
   INSERT INTO QUEST VALUES
-    (15, 4, 'Anthony Stockman', seq_ExamCode.nextval, 14);
+    (15, 4, 'Anthony Stockman', 88, 14);
   INSERT INTO QUEST VALUES
-    (21, 3, 'Matthew Huntbach', seq_ExamCode.nextval, 18);
+    (21, 3, 'Matthew Huntbach', 89, 18);
   INSERT INTO QUEST VALUES
-    (31, 2, 'Nikos Tzevelekos', seq_ExamCode.nextval, 19);
+    (31, 2, 'Nikos Tzevelekos', 90, 19);
   INSERT INTO QUEST VALUES
-    (23, 1, 'Steve Uhlig', seq_ExamCode.nextval, 20);
+    (23, 1, 'Steve Uhlig', 91, 20);
   INSERT INTO QUEST VALUES
-    (03, 1, 'Lorenzo Jamone', seq_ExamCode.nextval, 22);
+    (03, 1, 'Lorenzo Jamone', 83, 22);
   INSERT INTO QUEST VALUES
-    (07, 1, 'Steve Uhlig', seq_ExamCode.nextval, 21);
+    (07, 1, 'Steve Uhlig', 88, 21);
   INSERT INTO QUEST VALUES
-    (20, 1, 'Lorenzo Jamone', seq_ExamCode.nextval, 16);
+    (20, 1, 'Lorenzo Jamone', 86, 16);
   INSERT INTO QUEST VALUES
-    (18, 1, 'Juan Alvarado', seq_ExamCode.nextval, 15);
+    (18, 1, 'Juan Alvarado', 91, 15);
   INSERT INTO QUEST VALUES
-    (17, 1, 'Juan Alvarado', seq_ExamCode.nextval, 16);
+    (17, 1, 'Juan Alvarado', 82, 16);
 
 
 -- Creating sequences
