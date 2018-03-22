@@ -188,16 +188,16 @@ CREATE TABLE CW
 
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      83, 'ECS529U', seq_StudentID.nextval);
+      83, 'ECS529U', 3);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      90, 'ECS529U', seq_StudentID.nextval);
+      90, 'ECS529U', 2);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      80, 'ECS522U', seq_StudentID.nextval);
+      80, 'ECS522U', 4);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      80, 'ECS522U', seq_StudentID.nextval);
+      80, 'ECS522U', 5);
 
 -- table for exams --
 -- maybe add studentID because student takes exams. StudentID NUMBER(9) --
