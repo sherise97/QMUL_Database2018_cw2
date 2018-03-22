@@ -6,10 +6,10 @@ SET TERMOUT OFF
 
 -- creating 8 tables --
 DROP TABLE STUD;
+DROP TABLE LECT;
 DROP TABLE SUBJ;
 DROP TABLE STUDSUBJ;
 DROP TABLE SUBJLECT;
-DROP TABLE LECT;
 DROP TABLE CW;
 DROP TABLE EXAM;
 DROP TABLE QUEST;
@@ -18,31 +18,66 @@ DROP TABLE QUEST;
 CREATE TABLE STUD
 (
   StudentID INTEGER NOT NULL,
-  StudentName VARCHAR2(20) NOT NULL,
+  FirstName VARCHAR2(30) NOT NULL,
+  LastName VARCHAR2(30) NOT NULL,
   SEmail VARCHAR2(30) NOT NULL,
   PRIMARY KEY (StudentID)
 );
 
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Sherise Lam', 's.y.lam@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Sherise', 'Lam', 's.y.lam@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Ethan Sung', 'j.y.s@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Ethan', 'Sung', 'j.y.s@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Sam Law', 'w.s.l@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Sam', 'Law', 'w.s.l@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Simon Carucci', 's.c@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Simon', 'Carucci', 's.c@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Agata Miakisz', 'a.m@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Agata', 'Miakisz', 'a.m@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Happy Kitty', 'h.k@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Happy', 'Kitty', 'h.k@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Choco Latte', 'c.l@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Choco', 'Latte', 'c.l@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Black Cat', 'b.c@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Black', 'Cat', 'b.c@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Lazy Pig', 'l.p@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Lazy', 'Pig', 'l.p@se16.qmul.ac.uk');
   INSERT INTO STUD VALUES
-    (seq_StudentID.nextval, 'Jack Walker', 'j.w@se16.qmul.ac.uk');
+    (seq_StudentID.nextval, 'Jack', 'Walker', 'j.w@se16.qmul.ac.uk');
+
+
+-- table for lecturers --
+CREATE TABLE LECT
+(
+  LecturerID INTEGER NOT NULL,
+  FirstName VARCHAR2(30) NOT NULL,
+  LastName VARCHAR2(30) NOT NULL,
+  LEmail VARCHAR2(30) NOT NULL,
+  PRIMARY KEY (LecturerID)
+);
+
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Tassos', 'Tombros', 'a.tombros@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Anthony', 'Stockman', 't.stockman@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Thomas', 'Roelleke', 't.roelleke@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Matthew', 'Huntbach', 'm.m.huntbach@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Nikos', 'Tzevelekos', 'nikos.tzevelekos@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Steve', 'Uhlig', 'steve.uhlig@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Mustafa', 'Bozkurt', 'm.bozkurt@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Lorenzo', 'Jamone', 'l.jamone@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Juan', 'Alvarado', 'j.alvaradolopez@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Ishani', 'Chandrasekara', 'i.chandrasekara@qmul.ac.uk');
+  INSERT INTO LECT VALUES
+    (seq_LecturerID.nextval, 'Graham', 'Spickett-Jones', 'spickett-jones@qmul.ac.uk');
 
 
 -- table for subjects --
@@ -80,8 +115,7 @@ CREATE TABLE SUBJ
 -- table for student subject --
 -- maybe ADD LECTSUBJ! as at least one lecturer taught one subject. --
 CREATE TABLE STUDSUBJ
-(
-  StudentID INTEGER NOT NULL,
+( StudentID INTEGER NOT NULL,
   SubjectCode VARCHAR2(8) NOT NULL
 );
 
@@ -105,39 +139,6 @@ CREATE TABLE STUDSUBJ
     (seq_StudentID.nextval, 'ECS510U');
   INSERT INTO STUDSUBJ VALUES
     (seq_StudentID.nextval, 'ECS505U');
-
-
--- table for lecturers --
-CREATE TABLE LECT
-(
-  LecturerID INTEGER NOT NULL,
-  LName VARCHAR2(30) NOT NULL,
-  LEmail VARCHAR2(30) NOT NULL,
-  PRIMARY KEY (LecturerID)
-);
-
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Tassos Tombros', 'a.tombros@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Anthony Stockman', 't.stockman@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Thomas Roelleke', 't.roelleke@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Matthew Huntbach', 'm.m.huntbach@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Nikos Tzevelekos', 'nikos.tzevelekos@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Steve Uhlig', 'steve.uhlig@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Mustafa Bozkurt', 'm.bozkurt@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Lorenzo Jamone', 'l.jamone@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Juan Alvarado', 'j.alvaradolopez@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Ishani Chandrasekara', 'i.chandrasekara@qmul.ac.uk');
-  INSERT INTO LECT VALUES
-    (seq_LecturerID.nextval, 'Graham Spickett-Jones', 'spickett-jones@qmul.ac.uk');
 
 
 -- table for subjects lecturer --
@@ -174,14 +175,14 @@ CREATE TABLE SUBJLECT
 CREATE TABLE CW
 (
   CWCode INTEGER NOT NULL,
-  CWName VARCHAR2(30) NOT NULL,
+  CWName VARCHAR2(60) NOT NULL,
   CWDeadline DATE NOT NULL,
   CWMark NUMBER(3) NOT NULL,
   SubjectCode VARCHAR2(8) NOT NULL,
   StudentID INTEGER NOT NULL,
   PRIMARY KEY (CWCode),
-  -- CONSTRAINT CW_SubjectCode
-  --   FOREIGN KEY (SubjectCode) REFERENCES SUBJ(SubjectCode) ON DELETE CASCADE,
+  CONSTRAINT CW_SubjectCode
+    FOREIGN KEY (SubjectCode) REFERENCES SUBJ(SubjectCode) ON DELETE CASCADE,
   CONSTRAINT CW_StudentID
     FOREIGN KEY (StudentID) REFERENCES STUD(StudentID) ON DELETE CASCADE
 );
