@@ -16,8 +16,7 @@ DROP TABLE QUEST;
 
 -- table for students --
 CREATE TABLE STUD
-(
-  StudentID INTEGER NOT NULL,
+( StudentID INTEGER NOT NULL,
   FirstName VARCHAR2(30) NOT NULL,
   LastName VARCHAR2(30) NOT NULL,
   SEmail VARCHAR2(30) NOT NULL,
@@ -48,8 +47,7 @@ CREATE TABLE STUD
 
 -- table for lecturers --
 CREATE TABLE LECT
-(
-  LecturerID INTEGER NOT NULL,
+( LecturerID INTEGER NOT NULL,
   FirstName VARCHAR2(30) NOT NULL,
   LastName VARCHAR2(30) NOT NULL,
   LEmail VARCHAR2(30) NOT NULL,
@@ -82,8 +80,7 @@ CREATE TABLE LECT
 
 -- table for subjects --
 CREATE TABLE SUBJ
-(
-  SubjectCode VARCHAR2(8) NOT NULL,
+( SubjectCode VARCHAR2(8) NOT NULL,
   SubjName VARCHAR2(65) NOT NULL,
   SubjYear DATE NOT NULL,
   SubjSem NUMBER(1) NOT NULL,
@@ -173,8 +170,7 @@ CREATE TABLE SUBJLECT
 -- table for Courseworks --
 -- add student ID because Courseworks done by student. --
 CREATE TABLE CW
-(
-  CWCode INTEGER NOT NULL,
+( CWCode INTEGER NOT NULL,
   CWName VARCHAR2(60) NOT NULL,
   CWDeadline DATE NOT NULL,
   CWMark NUMBER(3) NOT NULL,
@@ -203,8 +199,7 @@ CREATE TABLE CW
 -- table for exams --
 -- maybe add studentID because student takes exams. StudentID NUMBER(9) --
 CREATE TABLE EXAM
-(
-  ExamCode INTEGER NOT NULL,
+( ExamCode INTEGER NOT NULL,
   EName VARCHAR2(15) NOT NULL,
   EType VARCHAR2(10) NOT NULL,
   EDate DATE NOT NULL,
@@ -257,13 +252,11 @@ CREATE TABLE EXAM
 -- table for questions --
 -- max marks of each question is 5 --
 CREATE TABLE QUEST
-(
-  QuestionNo NUMBER(2) NOT NULL,
+( QuestionNo NUMBER(2) NOT NULL,
   QMark NUMBER(2) NOT NULL,
   QAuthor VARCHAR2(60) NOT NULL,
   ExamCode INTEGER NOT NULL,
   LecturerID INTEGER NOT NULL,
-  PRIMARY KEY (QuestionNo),
   CONSTRAINT QUEST_ExamCode
     FOREIGN KEY (ExamCode) REFERENCES EXAM(ExamCode) ON DELETE CASCADE,
   CONSTRAINT QUEST_LecturerID
