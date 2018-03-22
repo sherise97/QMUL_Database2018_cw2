@@ -188,16 +188,16 @@ CREATE TABLE CW
 
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      83, 'ECS529U', 161017024);
+      83, 'ECS529U', seq_StudentID.nextval);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      90, 'ECS529U', 161017024);
+      90, 'ECS529U', seq_StudentID.nextval);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      80, 'ECS522U', 160448269);
+      80, 'ECS522U', seq_StudentID.nextval);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      80, 'ECS522U', 160449269);
+      80, 'ECS522U', seq_StudentID.nextval);
 
 -- table for exams --
 -- maybe add studentID because student takes exams. StudentID NUMBER(9) --
@@ -223,34 +223,34 @@ CREATE TABLE EXAM
 
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', 100000011, 161017024);
+      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('18-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 60, 'BUS021', 100000006, 160448269);
+      TO_TIMESTAMP('10:00','HH24:MI'), 60, 'BUS021', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS524U', 100000003, 160000001);
+      TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS524U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS518U', 100000001, 160000003);
+      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS518U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', 100000041, 160000004);
+      TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 73, 'ECS522U', 100000005, 110519970);
+      TO_TIMESTAMP('14:30','HH24:MI'), 73, 'ECS522U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', 100000001, 123456789);
+      TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS518U', 100000001, 234567891);
+      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS518U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', 100000041, 345678912);
+      TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', seq_LecturerID.nextval, seq_StudentID.nextval);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', 100000001, 456789123);
+      TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', seq_LecturerID.nextval, seq_StudentID.nextval);
 
 
 -- table for questions --
@@ -270,35 +270,35 @@ CREATE TABLE QUEST
 );
 
   INSERT INTO QUEST VALUES
-    (01, 2, 'Tassos Tombros', 0159, 100000001);
+    (01, 2, 'Tassos Tombros', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (02, 3, 'Tassos Tombros', 0159, 100000001);
+    (02, 3, 'Tassos Tombros', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (03, 4, 'Mustafa Bozkurt', 0159, 100000041);
+    (03, 4, 'Mustafa Bozkurt', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (04, 2, 'Tassos Tombros', 0159, 100000001);
+    (04, 2, 'Tassos Tombros', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (05, 8, 'Tassos Tombros', 0159, 100000001);
+    (05, 8, 'Tassos Tombros', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (13, 5, 'Anthony Stockman', 2107, 100000011);
+    (13, 5, 'Anthony Stockman', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (15, 4, 'Anthony Stockman', 2107, 100000012);
+    (15, 4, 'Anthony Stockman', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (21, 3, 'Matthew Huntbach', 3459, 1000000021);
+    (21, 3, 'Matthew Huntbach', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (31, 2, 'Nikos Tzevelekos', 2107, 1000000022);
+    (31, 2, 'Nikos Tzevelekos', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (23, 1, 'Steve Uhlig', 1122, 100000003);
+    (23, 1, 'Steve Uhlig', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (03, 1, 'Lorenzo Jamone', 1312, 100000042);
+    (03, 1, 'Lorenzo Jamone', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (07, 1, 'Steve Uhlig', 0710, 100000003);
+    (07, 1, 'Steve Uhlig', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (20, 1, 'Lorenzo Jamone', 0710, 100000042);
+    (20, 1, 'Lorenzo Jamone', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (18, 1, 'Juan Alvarado', 2198, 10000005);
+    (18, 1, 'Juan Alvarado', seq_ExamCode.nextval, seq_LecturerID.nextval);
   INSERT INTO QUEST VALUES
-    (17, 1, 'Juan Alvarado', 2198, 100000005);
+    (17, 1, 'Juan Alvarado', seq_ExamCode.nextval, seq_LecturerID.nextval);
 
 
 -- Creating sequences
