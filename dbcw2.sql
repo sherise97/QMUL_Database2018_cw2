@@ -122,9 +122,9 @@ CREATE TABLE STUDSUBJ
   INSERT INTO STUDSUBJ VALUES
     (seq_StudentID.nextval, 'ECS529U');
   INSERT INTO STUDSUBJ VALUES
-    (seq_StudentID.nextval, 'BUS021');
+    (seq_StudentID.nextval, 'BUS021U');
   INSERT INTO STUDSUBJ VALUES
-    (seq_StudentID.nextval, 'BUS011');
+    (seq_StudentID.nextval, 'BUS011U');
   INSERT INTO STUDSUBJ VALUES
     (seq_StudentID.nextval, 'ECS522U');
   INSERT INTO STUDSUBJ VALUES
@@ -227,7 +227,7 @@ CREATE TABLE EXAM
       TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', 2, 2);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('18-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 60, 'BUS021', 11, 3);
+      TO_TIMESTAMP('10:00','HH24:MI'), 60, 'BUS021U', 11, 3);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS524U', 3, 4);
@@ -244,13 +244,13 @@ CREATE TABLE EXAM
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', 7, 8);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS518U', 8, 9);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', 9, 10);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', 10, 11);
 
 
