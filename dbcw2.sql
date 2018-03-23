@@ -1,5 +1,13 @@
 -- Sherise version --
 -- Database System Coursework02 - Implementation. --
+
+-- extend the table format (show longer column.)
+-- Optimal way to view this
+-- set lines 165
+-- set trimout on
+-- set tab off
+-- column FACILITIES format a120
+
 SET TERMOUT ON
 PROMPT Building demonstration tables.  Please wait.
 SET TERMOUT OFF
@@ -326,41 +334,41 @@ CREATE TABLE EXAM
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', 4, 2);
   INSERT INTO EXAM VALUES
-    (2107, 'Final Exam', 'First Sit', TO_DATE('04-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('04-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', 8, 2);
   INSERT INTO EXAM VALUES
-    (3459, 'Final Exam', 'First Sit', TO_DATE('02-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('02-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 73, 'ECS522U', 10, 2);
   INSERT INTO EXAM VALUES
-    (1122, 'Final Exam', 'First Sit', TO_DATE('22-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('22-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', 2, 2);
   INSERT INTO EXAM VALUES
-    (1312, 'Final Exam', 'First Sit', TO_DATE('16-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('16-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 80, 'ECS518U', 2, 2);
   INSERT INTO EXAM VALUES
-    (2198, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 89, 'ECS510U', 5, 2);
   INSERT INTO EXAM VALUES
-    (0710, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 70, 'ECS524U', 7, 2);
 
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('18-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 60, 'BUS021U', 11, 3);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (8, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS524U', 7, 4);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+    (6, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS518U', 2, 5);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+    (3, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', 8, 6);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+    (4, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 73, 'ECS522U', 10, 7);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (5, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 92, 'ECS509U', 2, 8);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('30-04-2018','DD-MM-YYYY'),
@@ -377,7 +385,6 @@ CREATE TABLE EXAM
 
 
 -- table for questions --
--- max marks of each question is 5 --
 CREATE TABLE QUEST
 ( QuestionNo NUMBER(2) NOT NULL,
   QMark NUMBER(2) NOT NULL,
@@ -420,7 +427,6 @@ CREATE TABLE QUEST
     (18, 1, 'Juan Alvarado', 7, 10);
   INSERT INTO QUEST VALUES
     (17, 1, 'Juan Alvarado', 7, 10);
-
 
 
 COMMIT;
