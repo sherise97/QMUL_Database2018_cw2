@@ -4,6 +4,13 @@ SET TERMOUT ON
 PROMPT Building demonstration tables.  Please wait.
 SET TERMOUT OFF
 
+-- Dropping sequences --
+DROP SEQUENCE seq_StudentID;
+DROP SEQUENCE seq_LecturerID;
+DROP SEQUENCE seq_SubjectCode;
+DROP SEQUENCE seq_ExamCode;
+DROP SEQUENCE seq_CWCode;
+
 -- creating 8 tables --
 DROP TABLE STUD CASCADE CONSTRAINTS;
 DROP TABLE LECT CASCADE CONSTRAINTS;
@@ -17,8 +24,8 @@ DROP TABLE QUEST CASCADE CONSTRAINTS;
 -- table for students --
 CREATE TABLE STUD
 ( StudentID INTEGER NOT NULL,
-  FirstName VARCHAR2(30) NOT NULL,
-  LastName VARCHAR2(30) NOT NULL,
+  FirstName VARCHAR2(20) NOT NULL,
+  LastName VARCHAR2(20) NOT NULL,
   SEmail VARCHAR2(30) NOT NULL,
   PRIMARY KEY (StudentID)
 );
@@ -48,8 +55,8 @@ CREATE TABLE STUD
 -- table for lecturers --
 CREATE TABLE LECT
 ( LecturerID INTEGER NOT NULL,
-  FirstName VARCHAR2(30) NOT NULL,
-  LastName VARCHAR2(30) NOT NULL,
+  FirstName VARCHAR2(20) NOT NULL,
+  LastName VARCHAR2(20) NOT NULL,
   LEmail VARCHAR2(30) NOT NULL,
   PRIMARY KEY (LecturerID)
 );
