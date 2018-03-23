@@ -315,76 +315,76 @@ CREATE TABLE CW
       84, 'ECS506U', 2);
 
   INSERT INTO CW VALUES
-    (2, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       80, 'ECS529U', 3);
   INSERT INTO CW VALUES
-    (3, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       79, 'ECS529U', 3);
   INSERT INTO CW VALUES
-    (4, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       81, 'ECS522U', 3);
   INSERT INTO CW VALUES
-    (5, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       78, 'ECS522U', 3);
   INSERT INTO CW VALUES
-    (6, 'Coursework01 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework01 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
       76, 'ECS506U', 3);
   INSERT INTO CW VALUES
-    (7, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       72, 'ECS506U', 3);
   INSERT INTO CW VALUES
-    (8, 'Coursework03 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework03 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       74, 'ECS506U', 3);
   INSERT INTO CW VALUES
-    (9, 'Coursework04 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework04 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       73, 'ECS506U', 3);
 
 
   INSERT INTO CW VALUES
-    (2, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       76, 'ECS529U', 4);
   INSERT INTO CW VALUES
-    (3, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       79, 'ECS529U', 4);
   INSERT INTO CW VALUES
-    (4, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       80, 'ECS522U', 4);
   INSERT INTO CW VALUES
-    (5, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       82, 'ECS522U', 4);
   INSERT INTO CW VALUES
-    (6, 'Coursework02 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
       78, 'ECS506U', 4);
   INSERT INTO CW VALUES
-    (7, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       81, 'ECS506U', 4);
   INSERT INTO CW VALUES
-    (8, 'Coursework02 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       83, 'ECS506U', 4);
   INSERT INTO CW VALUES
-    (9, 'Coursework02 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       84, 'ECS506U', 4);
 
   INSERT INTO CW VALUES
-    (2, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       72, 'ECS529U', 5);
   INSERT INTO CW VALUES
-    (3, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       69, 'ECS529U', 6);
   INSERT INTO CW VALUES
-    (4, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       74, 'ECS522U', 7);
   INSERT INTO CW VALUES
-    (5, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       75, 'ECS522U', 8);
   INSERT INTO CW VALUES
-    (6, 'Coursework02 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
       70, 'ECS506U', 9);
   INSERT INTO CW VALUES
-    (7, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       73, 'ECS506U', 10);
   INSERT INTO CW VALUES
-    (8, 'Coursework02 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+    (seq_CWCode.nextval, 'Coursework02 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       79, 'ECS506U', 11);
 
 -- table for exams --
@@ -498,7 +498,7 @@ CREATE TABLE EXAM
       TO_TIMESTAMP('10:00','HH24:MI'), 52, 'ECS524U', 7, 6);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'Resit', 2, 6);
+      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS518U', 2, 6);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 74, 'ECS505U', 8, 6);
@@ -522,8 +522,8 @@ CREATE TABLE EXAM
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 76, 'ECS518U', 2, 7);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'Resit', 8, 7);
+    (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 7);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 69, 'ECS522U', 10, 7);
@@ -547,8 +547,8 @@ CREATE TABLE EXAM
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 8);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 72, 'Resit', 10, 8);
+    (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 72, 'ECS522U', 10, 8);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 90, 'ECS509U', 2, 8);
