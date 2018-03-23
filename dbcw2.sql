@@ -9,7 +9,7 @@
 -- column FACILITIES format a120
 
 SET TERMOUT ON
-PROMPT Building demonstration tables.  Please wait.
+PROMPT Building demonstration tables. Please wait.
 SET TERMOUT OFF
 
 -- DROPPING SEQUENCE --
@@ -127,7 +127,7 @@ CREATE TABLE SUBJ
 );
 
   INSERT INTO SUBJ VALUES
-    ('ECS529U', 'Database Systems', TO_DATE('01-2018','MM-YYYY'), 5);
+    ('ECS519U', 'Database Systems', TO_DATE('01-2018','MM-YYYY'), 5);
   INSERT INTO SUBJ VALUES
     ('ECS522U', 'Graphical User Interfaces', TO_DATE('01-2018','MM-YYYY'), 5);
   INSERT INTO SUBJ VALUES
@@ -160,7 +160,7 @@ CREATE TABLE STUDSUBJ
 );
 
   INSERT INTO STUDSUBJ VALUES
-    (2, 'ECS529U');
+    (2, 'ECS519U');
   INSERT INTO STUDSUBJ VALUES
     (2, 'ECS522U');
   INSERT INTO STUDSUBJ VALUES
@@ -179,7 +179,7 @@ CREATE TABLE STUDSUBJ
   INSERT INTO STUDSUBJ VALUES
     (3, 'BUS021U');
   INSERT INTO STUDSUBJ VALUES
-    (3, 'ECS529U');
+    (3, 'ECS519U');
   INSERT INTO STUDSUBJ VALUES
     (3, 'ECS506U');
   INSERT INTO STUDSUBJ VALUES
@@ -196,7 +196,7 @@ CREATE TABLE STUDSUBJ
   INSERT INTO STUDSUBJ VALUES
     (4, 'BUS021U');
   INSERT INTO STUDSUBJ VALUES
-    (4, 'ECS529U');
+    (4, 'ECS519U');
   INSERT INTO STUDSUBJ VALUES
     (4, 'ECS506U');
   INSERT INTO STUDSUBJ VALUES
@@ -211,7 +211,7 @@ CREATE TABLE STUDSUBJ
     (4, 'ECS505U');
 
   INSERT INTO STUDSUBJ VALUES
-    (5, 'ECS529U');
+    (5, 'ECS519U');
   INSERT INTO STUDSUBJ VALUES
     (5, 'ECS522U');
   INSERT INTO STUDSUBJ VALUES
@@ -252,7 +252,7 @@ CREATE TABLE SUBJLECT
 );
 
   INSERT INTO SUBJLECT VALUES
-    ('ECS529U', 4);
+    ('ECS519U', 4);
   INSERT INTO SUBJLECT VALUES
     ('ECS522U', 10);
   INSERT INTO SUBJLECT VALUES
@@ -291,10 +291,10 @@ CREATE TABLE CW
 
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      83, 'ECS529U', 2);
+      83, 'ECS519U', 2);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      86, 'ECS529U', 2);
+      86, 'ECS519U', 2);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-02-2018 23:55','DD-MM-YYYY HH24:MI'),
       90, 'ECS522U', 2);
@@ -316,10 +316,10 @@ CREATE TABLE CW
 
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      80, 'ECS529U', 3);
+      80, 'ECS519U', 3);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      79, 'ECS529U', 3);
+      79, 'ECS519U', 3);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       81, 'ECS522U', 3);
@@ -342,10 +342,10 @@ CREATE TABLE CW
 
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      76, 'ECS529U', 4);
+      76, 'ECS519U', 4);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      79, 'ECS529U', 4);
+      79, 'ECS519U', 4);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       80, 'ECS522U', 4);
@@ -367,10 +367,10 @@ CREATE TABLE CW
 
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      72, 'ECS529U', 5);
+      72, 'ECS519U', 5);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      69, 'ECS529U', 6);
+      69, 'ECS519U', 6);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       74, 'ECS522U', 7);
@@ -410,7 +410,7 @@ CREATE TABLE EXAM
 
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', 4, 2);
+      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS519U', 4, 2);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('04-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 89, 'ECS505U', 8, 2);
@@ -438,7 +438,7 @@ CREATE TABLE EXAM
       TO_TIMESTAMP('14:30','HH24:MI'), 65, 'ECS505U', 8, 3);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 82, 'ECS529U', 4, 3);
+      TO_TIMESTAMP('14:30','HH24:MI'), 82, 'ECS519U', 4, 3);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 89, 'ECS509U', 2, 3);
@@ -457,7 +457,7 @@ CREATE TABLE EXAM
       TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 4);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', 4, 4);
+      TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS519U', 4, 4);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 82, 'ECS509U', 2, 4);
@@ -470,7 +470,7 @@ CREATE TABLE EXAM
 
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 69, 'ECS529U', 4, 5);
+      TO_TIMESTAMP('10:00','HH24:MI'), 69, 'ECS519U', 4, 5);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 63, 'ECS524U', 7, 5);
@@ -492,7 +492,7 @@ CREATE TABLE EXAM
 
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 69, 'ECS529U', 4, 6);
+      TO_TIMESTAMP('10:00','HH24:MI'), 69, 'ECS519U', 4, 6);
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 52, 'ECS524U', 7, 6);
