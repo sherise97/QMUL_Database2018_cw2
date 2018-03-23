@@ -379,9 +379,9 @@ CREATE TABLE EXAM
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 80, 'ECS509U', 2, 11);
-    INSERT INTO EXAM VALUES
-      (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-        TO_TIMESTAMP('10:00','HH24:MI'), 60, 'ECS510U', 5, 11);
+  INSERT INTO EXAM VALUES
+    (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('10:00','HH24:MI'), 60, 'ECS510U', 5, 11);
 
 
 -- table for questions --
