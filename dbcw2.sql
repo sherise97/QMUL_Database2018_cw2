@@ -513,49 +513,11 @@ CREATE TABLE EXAM
       TO_TIMESTAMP('10:00','HH24:MI'), 60, 'ECS510U', 5, 6);
 
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 72, 'ECS529U', 4, 7);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 70, 'ECS524U', 7, 7);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 76, 'ECS518U', 2, 7);
-  INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 7);
   INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 69, 'ECS522U', 10, 7);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 83, 'ECS509U', 2, 7);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS510U', 5, 7);
-
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 82, 'ECS529U', 4, 8);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS524U', 7, 8);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 78, 'ECS518U', 2, 8);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 8);
-  INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 72, 'ECS522U', 10, 8);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 90, 'ECS509U', 2, 8);
-  INSERT INTO EXAM VALUES
-    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('10:00','HH24:MI'), 87, 'ECS510U', 5, 8);
-
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 77, 'ECS518U', 2, 9);
