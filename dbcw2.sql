@@ -434,126 +434,126 @@ CREATE TABLE EXAM
     (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('18-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 78, 'BUS021U', 11, 3);
   INSERT INTO EXAM VALUES
-    (3, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 65, 'ECS505U', 8, 3);
   INSERT INTO EXAM VALUES
-    (2, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 82, 'ECS529U', 4, 3);
   INSERT INTO EXAM VALUES
-    (5, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 89, 'ECS509U', 2, 3);
   INSERT INTO EXAM VALUES
-    (8, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 73, 'ECS524U', 7, 3);
   INSERT INTO EXAM VALUES
-    (6, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS518U', 2, 3);
 
   INSERT INTO EXAM VALUES
-    (9, 'Final Exam', 'First Sit', TO_DATE('18-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('18-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 72, 'BUS021U', 11, 4);
   INSERT INTO EXAM VALUES
-    (3, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 4);
   INSERT INTO EXAM VALUES
-    (2, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 79, 'ECS529U', 4, 4);
   INSERT INTO EXAM VALUES
-    (5, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 82, 'ECS509U', 2, 4);
   INSERT INTO EXAM VALUES
-    (8, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 77, 'ECS524U', 7, 4);
   INSERT INTO EXAM VALUES
-    (6, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 71, 'ECS518U', 2, 4);
 
   INSERT INTO EXAM VALUES
-    (2, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 69, 'ECS529U', 4, 5);
   INSERT INTO EXAM VALUES
-    (8, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 63, 'ECS524U', 7, 5);
   INSERT INTO EXAM VALUES
-    (6, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS518U', 2, 5);
   INSERT INTO EXAM VALUES
-    (3, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 78, 'ECS505U', 8, 5);
   INSERT INTO EXAM VALUES
-    (4, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 75, 'ECS522U', 10, 5);
   INSERT INTO EXAM VALUES
-    (5, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 77, 'ECS509U', 2, 5);
   INSERT INTO EXAM VALUES
-    (7, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 73, 'ECS510U', 5, 2);
 
   INSERT INTO EXAM VALUES
-    (2, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 69, 'ECS529U', 4, 6);
   INSERT INTO EXAM VALUES
-    (8, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 52, 'ECS524U', 7, 6);
   INSERT INTO EXAM VALUES
-    (6, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS518U', 2, 6);
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'Resit', 2, 6);
   INSERT INTO EXAM VALUES
-    (3, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 74, 'ECS505U', 8, 6);
   INSERT INTO EXAM VALUES
-    (4, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 65, 'ECS522U', 10, 6);
   INSERT INTO EXAM VALUES
-    (5, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 72, 'ECS509U', 2, 6);
   INSERT INTO EXAM VALUES
-    (7, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 60, 'ECS510U', 5, 6);
 
   INSERT INTO EXAM VALUES
-    (2, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 72, 'ECS529U', 4, 7);
   INSERT INTO EXAM VALUES
-    (8, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 70, 'ECS524U', 7, 7);
   INSERT INTO EXAM VALUES
-    (6, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 76, 'ECS518U', 2, 7);
   INSERT INTO EXAM VALUES
-    (3, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 7);
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 70, 'Resit', 8, 7);
   INSERT INTO EXAM VALUES
-    (4, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 69, 'ECS522U', 10, 7);
   INSERT INTO EXAM VALUES
-    (5, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 83, 'ECS509U', 2, 7);
   INSERT INTO EXAM VALUES
-    (7, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS510U', 5, 7);
 
   INSERT INTO EXAM VALUES
-    (2, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('03-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 82, 'ECS529U', 4, 8);
   INSERT INTO EXAM VALUES
-    (8, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('08-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 79, 'ECS524U', 7, 8);
   INSERT INTO EXAM VALUES
-    (6, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('30-04-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 78, 'ECS518U', 2, 8);
   INSERT INTO EXAM VALUES
-    (3, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('07-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('14:30','HH24:MI'), 70, 'ECS505U', 8, 8);
   INSERT INTO EXAM VALUES
-    (4, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
-      TO_TIMESTAMP('14:30','HH24:MI'), 72, 'ECS522U', 10, 8);
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('10-05-2018','DD-MM-YYYY'),
+      TO_TIMESTAMP('14:30','HH24:MI'), 72, 'Resit', 10, 8);
   INSERT INTO EXAM VALUES
-    (5, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('13-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 90, 'ECS509U', 2, 8);
   INSERT INTO EXAM VALUES
-    (7, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
+    (seq_ExamCode.nextval, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 87, 'ECS510U', 5, 8);
 
   INSERT INTO EXAM VALUES
