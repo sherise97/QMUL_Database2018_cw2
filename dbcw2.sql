@@ -291,16 +291,79 @@ CREATE TABLE CW
 
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      83, 'ECS529U', 3);
+      83, 'ECS529U', 2);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      90, 'ECS529U', 2);
+      86, 'ECS529U', 2);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-02-2018 23:55','DD-MM-YYYY HH24:MI'),
-      80, 'ECS522U', 4);
+      90, 'ECS522U', 2);
   INSERT INTO CW VALUES
     (seq_CWCode.nextval, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
-      80, 'ECS522U', 5);
+      86, 'ECS522U', 2);
+  INSERT INTO CW VALUES
+    (seq_CWCode.nextval, 'Coursework01 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
+      81, 'ECS506U', 2);
+  INSERT INTO CW VALUES
+    (seq_CWCode.nextval, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      80, 'ECS506U', 2);
+  INSERT INTO CW VALUES
+    (seq_CWCode.nextval, 'Coursework03 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      82, 'ECS506U', 2);
+  INSERT INTO CW VALUES
+    (seq_CWCode.nextval, 'Coursework04 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      84, 'ECS506U', 2);
+
+  INSERT INTO CW VALUES
+    (2, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      80, 'ECS529U', 3);
+  INSERT INTO CW VALUES
+    (3, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      79, 'ECS529U', 3);
+  INSERT INTO CW VALUES
+    (4, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      81, 'ECS522U', 3);
+  INSERT INTO CW VALUES
+    (5, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      78, 'ECS522U', 3);
+  INSERT INTO CW VALUES
+    (6, 'Coursework01 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
+      76, 'ECS506U', 3);
+  INSERT INTO CW VALUES
+    (7, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      72, 'ECS506U', 3);
+  INSERT INTO CW VALUES
+    (8, 'Coursework03 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      74, 'ECS506U', 3);
+  INSERT INTO CW VALUES
+    (9, 'Coursework04 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      73, 'ECS506U', 3);
+
+
+  INSERT INTO CW VALUES
+    (2, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      76, 'ECS529U', 4);
+  INSERT INTO CW VALUES
+    (3, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      79, 'ECS529U', 4);
+  INSERT INTO CW VALUES
+    (4, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      80, 'ECS522U', 4);
+  INSERT INTO CW VALUES
+    (5, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      82, 'ECS522U', 4);
+  INSERT INTO CW VALUES
+    (6, 'Coursework02 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
+      78, 'ECS506U', 4);
+  INSERT INTO CW VALUES
+    (7, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      81, 'ECS506U', 4);
+  INSERT INTO CW VALUES
+    (8, 'Coursework02 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      83, 'ECS506U', 4);
+  INSERT INTO CW VALUES
+    (9, 'Coursework02 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      84, 'ECS506U', 4);
 
 -- table for exams --
 -- maybe add studentID because student takes exams. StudentID NUMBER(9) --
@@ -470,7 +533,6 @@ CREATE TABLE EXAM
   INSERT INTO EXAM VALUES
     (7, 'Final Exam', 'First Sit', TO_DATE('25-05-2018','DD-MM-YYYY'),
       TO_TIMESTAMP('10:00','HH24:MI'), 87, 'ECS510U', 5, 8);
-
 
   INSERT INTO EXAM VALUES
     (seq_ExamCode.nextval, 'Final Exam', 'Resit', TO_DATE('30-04-2018','DD-MM-YYYY'),
