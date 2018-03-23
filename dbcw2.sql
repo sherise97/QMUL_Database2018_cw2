@@ -1,8 +1,8 @@
 -- Sherise version --
 -- Database System Coursework02 - Implementation. --
 
--- extend the table format (show longer column.)
--- Optimal way to view this
+-- extend the table format (show longer column.) --
+-- Optimal way to view this --
 -- set lines 165
 -- set trimout on
 -- set tab off
@@ -364,6 +364,28 @@ CREATE TABLE CW
   INSERT INTO CW VALUES
     (9, 'Coursework02 - Prototype', TO_DATE('27-03-2018 23:55','DD-MM-YYYY HH24:MI'),
       84, 'ECS506U', 4);
+
+  INSERT INTO CW VALUES
+    (2, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      72, 'ECS529U', 5);
+  INSERT INTO CW VALUES
+    (3, 'Coursework01 - Design', TO_DATE('16-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      69, 'ECS529U', 6);
+  INSERT INTO CW VALUES
+    (4, 'Coursework01 - Stakeholders, requirements and design', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      74, 'ECS522U', 7);
+  INSERT INTO CW VALUES
+    (5, 'Coursework02 - Implementation', TO_DATE('23-03-2018 23:55','DD-MM-YYYY HH24:MI'),
+      75, 'ECS522U', 8);
+  INSERT INTO CW VALUES
+    (6, 'Coursework02 - Domain Analysis', TO_DATE('23-01-2018 23:55','DD-MM-YYYY HH24:MI'),
+      70, 'ECS506U', 9);
+  INSERT INTO CW VALUES
+    (7, 'Coursework02 - Requirements Elicitation', TO_DATE('06-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      73, 'ECS506U', 10);
+  INSERT INTO CW VALUES
+    (8, 'Coursework02 - Design', TO_DATE('20-02-2018 23:55','DD-MM-YYYY HH24:MI'),
+      79, 'ECS506U', 11);
 
 -- table for exams --
 -- maybe add studentID because student takes exams. StudentID NUMBER(9) --
